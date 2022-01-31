@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author noelrojas -->
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #192841;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StockExchangeWindowController">
+   <children>
+      <TableView fx:id="table" layoutX="84.0" layoutY="79.0" prefHeight="560.0" prefWidth="670.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <columns>
+          <TableColumn fx:id="companyColumn" prefWidth="179.0" text="Company" />
+          <TableColumn fx:id="symbolColumn" prefWidth="90.0" text="Symbol" />
+            <TableColumn fx:id="tradeIdColumn" prefWidth="84.0" text="Trade ID" />
+            <TableColumn fx:id="priceColumn" prefWidth="88.0" text="Price" />
+            <TableColumn fx:id="rocColumn" prefWidth="125.0" text="\% Rate of Change" />
+            <TableColumn fx:id="orocColumn" prefWidth="193.0" text="\%Overall Rate of Change" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

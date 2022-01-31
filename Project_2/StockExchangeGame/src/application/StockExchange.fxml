@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- @author noelrojas -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #192841;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StockExchangeController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="500.0" prefWidth="579.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar prefHeight="29.0" prefWidth="559.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Actions">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickStockExchange" text="Stock Exchange" />
+                        <MenuItem mnemonicParsing="false" onAction="#onClickShareHolder" text="Share Holder Info" />
+                        <MenuItem mnemonicParsing="false" onAction="#onClickAnalytics" text="Analytics" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <left>
+            <TableView id="main-table" fx:id="table" prefHeight="430.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+              <columns>
+                  <TableColumn fx:id="companyColumn" prefWidth="128.0" text="Company" />
+                <TableColumn fx:id="symbolColumn" prefWidth="76.0" text="Symbol" />
+                <TableColumn fx:id="priceColumn" prefWidth="83.0" text="Share Price" />
+              </columns>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </BorderPane.margin>
+            </TableView>
+         </left>
+         <right>
+            <AnchorPane prefHeight="471.0" prefWidth="334.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="btn-sell" layoutX="171.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#onClickSell" prefHeight="27.0" prefWidth="139.0" styleClass="btn" text="Sell">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <VBox layoutX="15.0" layoutY="127.0" prefHeight="111.0" prefWidth="304.0">
+                     <children>
+                        <Label fx:id="name" text="Stock Holder:  " textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font></Label>
+                        <Label fx:id="wallet" layoutX="10.0" layoutY="10.0" text="Wallet: " textFill="WHITE" />
+                        <Label fx:id="sharesValue" layoutX="10.0" layoutY="27.0" text="Shares Values: " textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="14.0" layoutY="9.0" prefHeight="17.0" prefWidth="299.0" text="Enter number of shares to buy or sell" textFill="WHITE" />
+                  <TextField fx:id="txtBuySell" layoutX="14.0" layoutY="27.0" prefHeight="27.0" prefWidth="298.0" />
+                  <Button id="btn-buy" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#onClickBuy" prefHeight="27.0" prefWidth="139.0" styleClass="btn" text="Buy">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="lblWarning" layoutX="17.0" layoutY="54.0" text="Number of shares must be provided" textFill="#fc0000" visible="false" />
+                  <Button id="btn-advance-1-day" fx:id="advance1Day" layoutX="25.0" layoutY="268.0" mnemonicParsing="false" onAction="#advance1Day" prefHeight="27.0" prefWidth="145.0" styleClass="btn" text="Advance 1 Day">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="btn-advance-14-days" fx:id="advance14Days" layoutX="182.0" layoutY="268.0" mnemonicParsing="false" onAction="#advance14Days" prefHeight="27.0" prefWidth="128.0" styleClass="btn" text="Advance 14 Days">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="btn-advance-30-days" fx:id="advance30Days" layoutX="25.0" layoutY="311.0" mnemonicParsing="false" onAction="#advance30Days" prefHeight="27.0" prefWidth="146.0" styleClass="btn" text="Advance 30 Days">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="btn-advance-90-days" fx:id="advance90Days" layoutX="182.0" layoutY="311.0" mnemonicParsing="false" onAction="#advance90Days" prefHeight="27.0" prefWidth="128.0" styleClass="btn" text="Advance 90 Days">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="25.0" layoutY="366.0" text="Enter custom days to advance" textFill="WHITE" />
+                  <TextField fx:id="txtCustomAdvance" layoutX="27.0" layoutY="383.0" prefHeight="27.0" prefWidth="281.0" />
+                  <Button id="btn-advance-custom-days" fx:id="customAdvance" layoutX="27.0" layoutY="430.0" mnemonicParsing="false" onAction="#customAdvance" prefHeight="27.0" prefWidth="280.0" styleClass="btn" text="Custom Advance">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label fx:id="txtCustomAdvanceSupply" layoutX="27.0" layoutY="410.0" prefHeight="17.0" prefWidth="280.0" text="Custom days must be supplied" textFill="RED" visible="false" />
+                  <Label fx:id="lblAdvanceSuccess" layoutX="25.0" layoutY="245.0" prefHeight="17.0" prefWidth="282.0" text="Advanced successfully!" textFill="#3fc927" visible="false" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

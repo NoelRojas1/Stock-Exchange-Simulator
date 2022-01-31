@@ -1,0 +1,101 @@
+Activision Blizzard Inc ATVI
+Adobe Inc. ADBE
+Advanced Micro Devices Inc AMD
+Align Technology Inc ALGN
+Alexion Pharmaceuticals Inc ALXN
+Amazon.com Inc AMZN
+Amgen Inc AMGN
+American Airlines Group Inc AAL
+Analog Devices Inc ADI
+Apple Inc AAPL
+Applied Materials Inc AMAT
+ASML Holding NV ASML
+Autodesk Inc ADSK
+Automatic Data Processing Inc ADP
+Broadcom Inc AVGO
+Baidu Inc BIDU
+Biogen Inc BIIB
+Biomarin Pharmaceutical Inc BMRN
+Cadence Design Systems Inc CDNS
+Cerner Corp CERN
+Check Point Software Technologies Ltd CHKP
+Charter Communications Inc CHTR
+Trip.com Group Ltd TCOM
+Cintas Corp CTAS
+Cisco Systems Inc CSCO
+Citrix Systems Inc CTXS
+Comcast Corp CMCSA
+Costco Wholesale Corp COST
+CSX Corp CSX
+Cognizant Technology Solutions Corp CTSH
+Dollar Tree Inc DLTR
+Electronic Arts EA
+eBay Inc EBAY
+Exelon Corp EXC
+Expedia Group Inc EXPE
+Fastenal Co FAST
+Facebook FB
+Fiserv Inc FISV
+Gilead Sciences Inc GILD
+Alphabet Class C GOOG
+Alphabet Class A GOOGL
+Hasbro Inc HAS
+Henry Schein Inc HSIC
+Illumina Inc ILMN
+Incyte Corp INCY
+Intel Corp INTC
+Intuit Inc INTU
+Intuitive Surgical Inc ISRG
+IDEXX Laboratories Inc IDXX
+J.B. Hunt Transport Services Inc JBHT
+JD.com Inc JD
+KLA Corp KLAC
+Kraft Heinz Co KHC
+Lam Research Corp LRCX
+Liberty Global PLC LBTYA
+Liberty Global PLC LBTYK
+Lululemon Athletica Inc LULU
+Mercadolibre Inc MELI
+Marriott International Inc MAR
+Microchip Technology Inc MCHP
+Mondelez International Inc MDLZ
+Monster Beverage Corp MNST
+Microsoft Corp MSFT
+Micron Technology Inc MU
+Maxim Integrated Products Inc MXIM
+Mylan NV MYL
+NetApp Inc NTAP
+Netflix Inc NFLX
+NetEase Inc NTES
+NVIDIA Corp NVDA
+NXP Semiconductors NV NXPI
+O’Reilly Automotive Inc ORLY
+Paychex Inc PAYX
+Paccar Inc PCAR
+Booking Holdings Inc BKNG
+PayPal Holdings Inc PYPL
+PepsiCo Inc. PEP
+Qualcomm Inc QCOM
+Regeneron Pharmaceuticals Inc REGN
+Ross Stores Inc ROST
+Sirius XM Holdings Inc SIRI
+Skyworks Solutions Inc SWKS
+Starbucks Corp SBUX
+NortonLifeLock Inc NLOK
+Synopsys Inc SNPS
+Take-Two Interactive Software Inc TTWO
+Tesla Inc TSLA
+Texas Instruments Inc TXN
+T-Mobile US Inc TMUS
+Ulta Beauty Inc ULTA
+United Airlines Holdings Inc UAL
+Verisign Inc VRSN
+Verisk Analytics Inc VRSK
+Vertex Pharmaceuticals Inc VRTX
+Walgreens Boots Alliance Inc WBA
+Walmart Inc WMT
+Western Digital Corp WDC
+Workday Inc WDAY
+Wynn Resorts Ltd WYNN
+Xcel Energy Inc XEL
+Xilinx Inc XLNX
